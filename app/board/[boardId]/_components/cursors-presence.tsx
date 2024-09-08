@@ -7,24 +7,24 @@ import { useOthersConnectionIds } from "@/liveblocks.config";
 import { Cursor } from "./cursor";
 
 const Cursors = () => {
-  const ids = useOthersConnectionIds();
+    const ids = useOthersConnectionIds();
 
-  return (
-    <>
-      {ids.map((connectionId) => (
-        <Cursor key={connectionId} connectionId={connectionId} />
-      ))}
-    </>
-  );
+    return (
+        <>
+            {ids.map((connectionId) => (
+                <Cursor key={connectionId} connectionId={connectionId} />
+            ))}
+        </>
+    );
 };
 
 export const CursorsPresence = memo(() => {
-  return (
-    <>
-      {/* TODO: Draft pencil */}
-      <Cursors />
-    </>
-  );
+    return (
+        <>
+            {/* TODO: Draft pencil */}
+            <Cursors />
+        </>
+    );
 });
 
 CursorsPresence.displayName = "CursorsPresence";

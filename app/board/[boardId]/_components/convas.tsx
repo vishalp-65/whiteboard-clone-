@@ -27,6 +27,7 @@ import { Participants } from "./participants";
 import { Toolbar } from "./toolbar";
 import { LiveObject } from "@liveblocks/client";
 import { LayerPreview } from "./layer-preview";
+import { SelectionBox } from "./selection-box";
 
 const MAX_LAYER = 100;
 
@@ -195,6 +196,7 @@ export const Canvas = ({ boardId }: CanvasProps) => {
                             selectionColor={layerIdsToColorSelection[layerId]}
                         />
                     ))}
+                    <SelectionBox onResizeHandlerPointerDown={() => {}} />
                     <CursorsPresence />
                 </g>
             </svg>

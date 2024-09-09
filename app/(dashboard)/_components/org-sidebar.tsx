@@ -27,7 +27,7 @@ const OrgSidebar = () => {
                     <span
                         className={cn("font-semibold text-2xl", font.className)}
                     >
-                        DrawBoard
+                        Board
                     </span>
                 </div>
             </Link>

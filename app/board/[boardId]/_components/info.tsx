@@ -52,7 +52,7 @@ export const Info = ({ boardId }: InfoProps) => {
                                 font.className
                             )}
                         >
-                            DrawBoard
+                            Board
                         </span>
                     </Link>
                 </Button>

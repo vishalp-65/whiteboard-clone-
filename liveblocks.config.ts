@@ -5,7 +5,8 @@ import {
     LiveObject,
 } from "@liveblocks/client";
 import { createLiveblocksContext, createRoomContext } from "@liveblocks/react";
-import { Layer, Color } from "@/types/canvas";
+
+import { Color,Layer } from "@/types/canvas";
 
 const client = createClient({
     throttle: 16,

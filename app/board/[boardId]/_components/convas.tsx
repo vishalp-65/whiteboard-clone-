@@ -1,7 +1,8 @@
 "use client";
+import { LiveObject } from "@liveblocks/client";
+import { nanoid } from "nanoid";
 import { useCallback, useMemo, useState } from "react";
 
-import { nanoid } from "nanoid";
 import {
     connectionIdToColor,
     findIntersectingLayersWithRectange,
@@ -30,12 +31,11 @@ import {
 
 import { CursorsPresence } from "./cursors-presence";
 import { Info } from "./info";
-import { Participants } from "./participants";
-import { Toolbar } from "./toolbar";
-import { LiveObject } from "@liveblocks/client";
 import { LayerPreview } from "./layer-preview";
+import { Participants } from "./participants";
 import { SelectionBox } from "./selection-box";
 import { SelectionTools } from "./selection-tools";
+import { Toolbar } from "./toolbar";
 
 const MAX_LAYER = 100;
 

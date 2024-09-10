@@ -345,7 +345,7 @@ export const Canvas = ({ boardId }: CanvasProps) => {
                     {canvasState.mode === CanvasMode.SelectionNet &&
                         canvasState.current != null && (
                             <rect
-                                className="fill-blue-500/5 stroke-blue-500 stroke-1"
+                                className="fill-blue-500/15 stroke-blue-500 stroke-1"
                                 x={Math.min(
                                     canvasState.origin.x,
                                     canvasState.current.x

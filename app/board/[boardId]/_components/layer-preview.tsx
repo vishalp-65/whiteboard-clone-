@@ -5,10 +5,10 @@ import { memo } from "react";
 import { useStorage } from "@/liveblocks.config";
 import { LayerType } from "@/types/canvas";
 
-import { Rectangle } from "./rectangle";
 import { Ellipse } from "./ellipse";
-import { Text } from "./text";
 import { Note } from "./note";
+import { Rectangle } from "./rectangle";
+import { Text } from "./text";
 
 interface LayerPreviewProps {
     id: string;

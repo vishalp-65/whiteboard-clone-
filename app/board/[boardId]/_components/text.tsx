@@ -60,12 +60,12 @@ export const Text = ({
                 html={value || "Text"}
                 onChange={handleContentChange}
                 className={cn(
-                    "h-full w-full flex items-center justify-center text-center drop-shadow-md outline-none",
+                    "h-full w-full flex items-center justify-center text-center drop-shadow-md text-wrap outline-none",
                     font.className
                 )}
                 style={{
                     fontSize: calculateFontSize(width, height),
-                    color: fill ? colorToCSS(fill) : "#000",
+                    color: fill ? colorToCSS(fill) : "#FFF",
                 }}
             />
         </foreignObject>

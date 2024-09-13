@@ -54,7 +54,13 @@ export const Note = ({
                 outline: selectionColor
                     ? `1px solid ${selectionColor}`
                     : "none",
-                backgroundColor: fill ? colorToCSS(fill) : "#000",
+                backgroundColor: fill
+                    ? colorToCSS(fill)
+                    : colorToCSS({
+                          r: 255,
+                          g: 249,
+                          b: 177,
+                      }),
             }}
             className="shadow-md drop-shadow-md"
         >
